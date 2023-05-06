@@ -1,0 +1,221 @@
+\documentclass{beamer}
+\usetheme{Singapore}
+
+% If you want to use XeLaTeX to compile this document,
+% comment out the four lines below and set the fonts you will use.
+
+\usepackage{fontspec}
+\setmainfont{Noto Serif CJK KR}
+\setsansfont{Noto Sans CJK KR}
+\setmonofont{Victor Mono}
+\usepackage[utf8]{inputenc}
+\usepackage{kotex}
+\usepackage{bookmark}
+\usepackage{hyperref}
+\hypersetup{
+  pdftitle={Mathlib4 포팅},
+  pdfpagemode=FullScreen,
+}
+\urlstyle{same}
+\usepackage{listings}
+\usepackage[authordate,backend=biber]{biblatex-chicago}
+\bibliography{refs}
+
+\title{Mathlib4 포팅}
+\author{차불휘}
+\date{2023년 5월 10일}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\section{자기소개}
+
+\begin{frame}{자기소개}
+  \begin{itemize}
+    \item 한국항공대학교 항공우주 및 기계공학부: 2016년 입학, 2020년 7월 휴학, 2023년
+          3월 자퇴
+    \item 공군 항공기기체정비병 복무: 2017년 5월\textasciitilde2019년 5월
+    \item \href{https://us.metamath.org/index.html}{메타매스(Metamath) 정리
+          증명기}
+    \item 수학, 논리학, 컴퓨터 과학 학습: 2017\textasciitilde2021년
+    \item \href{https://leanprover.github.io/}{린(Lean) 정리 증명기} 학습: 2022년
+          시작
+  \end{itemize}
+\end{frame}
+
+\section{프로젝트 소개}
+
+\subsection{정리 증명기}
+
+\begin{frame}{정리 증명기}
+  \textquotedblleft \href{https://leanprover.github.io/theorem_proving_in_lean4/introduction.html}
+  {린 4로 하는 정리 증명}\textquotedblright \autocite{tpil4}:
+  \begin{itemize}
+    \item 형식 검증: 수학 정리를 증명하거나 컴퓨터 시스템의 정확성을 검증하는
+          논리적\textperiodcentered 계산적 방법
+    \item 자동 정리 증명기: 정리의 증명을 자동으로 찾는 컴퓨터 프로그램
+    \item 상호 작용 정리 증명기: 이용자와 상호 작용을 하면서 이용자에게 도움을
+          받아 증명을 구성하는 컴퓨터 프로그램
+  \end{itemize}
+\end{frame}
+
+\subsection{형식 수학}
+
+\begin{frame}{형식 수학}
+  \href{https://www.cmu.edu/hoskinson/index.html}{호스킨슨 형식 수학 센터}에
+  관한 기사 \autocite{hoskinson}:
+  \begin{itemize}
+    \item 형식 수학: 형식 언어로 진술한 수학 정리와 증명을 다루는 수학 분야
+    \item 호스킨슨 형식 수학 센터의 목표
+    \begin{itemize}
+      \item 디지털 수학 라이브러리의 개발
+      \item 수학 진술을 자동으로 형식화하는 도구의 개발
+      \item 교육 자료의 제작
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\subsection{린(Lean) 정리 증명기}
+
+\begin{frame}{린(Lean) 정리 증명기}
+  \begin{itemize}
+    \item 린 정리 증명기
+    \begin{itemize}
+      \item 상호 작용 정리 증명기
+      \item 순수 함수형 프로그래밍 언어
+      \item 의존 유형론, 유형 클래스, 확장 가능한 구문, 매크로, 메타프로그래밍
+    \end{itemize}
+    \item \href{https://leodemoura.github.io/}{레오나르두 드 모라}
+    \begin{itemize}
+      \item 2013년: 마이크로소프트 연구소에서 린 프로젝트를 시작함
+      \item 2023년: 아마존 웹 서비스로 이직함
+    \end{itemize}
+    \item 링크:
+      \href{https://leanprover.github.io/}{누리집},
+      \href{https://leanprover-community.github.io/index.html}{린 커뮤니티
+        누리집},
+      \href{https://leanprover.zulipchat.com/}{린 줄립 대화방}
+  \end{itemize}
+\end{frame}
+
+\subsection{매스리브(Mathlib)}
+
+\begin{frame}{매스리브(Mathlib)}
+  \begin{itemize}
+    \item 매스리브
+    \begin{itemize}
+      \item 린 커뮤니티서 개발하는 린 수학 라이브러리
+      \item 현재 린 3에서 린 4로 옮기고 있음
+      \item 링크:
+        \href{https://leanprover-community.github.io/mathlib4_docs/}{문서},
+        \href{https://github.com/leanprover-community/mathlib4/}{깃허브 저장소}
+    \end{itemize}
+    \item 액상 텐서 실험
+    \begin{itemize}
+      \item 필즈상 수상자
+            \href{https://people.mpim-bonn.mpg.de/scholze/}{페터 숄체}가 제시한
+            형식화 도전 과제
+      \item 2022년 7월에 \href{https://math.commelin.net/}{요한 코멜린}과
+            \href{https://adamtopaz.com/}{애덤 토파즈}를 비롯한 여러 수학자가 린과
+            매스리브로 형식화함
+      \item 링크:
+        \href{https://xenaproject.wordpress.com/2022/09/12/beyond-the-liquid-tensor-experiment/}{케빈 버저드 교수님의 글},
+        \href{https://github.com/leanprover-community/lean-liquid}{깃허브 저장소}
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\subsection{린과 매스리브의 활용}
+
+\begin{frame}{린과 매스리브의 활용}
+  \begin{enumerate}
+    \item 신뢰성 높은 수학 AI의 개발
+    \begin{itemize}
+      \item \href{https://huggingface.co/hoskinson-center/minif2f-lean4}{minif2f-lean4}:
+            수학 올림피아드, 고교 수학, 대학 수학의 연습 문제 진술로 이뤄진
+            자료집
+      \item \href{https://huggingface.co/hoskinson-center/proofGPT-v0.1-6.7B}{ProofGPT-v0.1}:
+            \href{https://huggingface.co/datasets/hoskinson-center/proof-pile}{proof-pile}로
+            훈련한 GPT-네오X 구조 기반의 6.7B 매개 변수 언어 모형
+    \end{itemize}
+    \item 컴퓨터 기반 수학 교육
+    \begin{itemize}
+      \item \href{https://pat2023.icube.unistra.fr/}{PAT 2023}: \textquoteleft
+            교육을 위한 증명 보조기\textquoteright\ 여름 학교
+      \item \href{https://adam.math.hhu.de/}{린 게임 서버}: 린 4로 작동하는 상호
+            작용 게임 서버
+    \end{itemize}
+  \end{enumerate}
+\end{frame}
+
+\section{개발 역량 및 계획}
+
+\subsection{개발 역량 및 계획}
+
+\begin{frame}[fragile]{개발 역량 및 계획}
+  \begin{enumerate}
+    \item 린 4로 하는 정리 증명 \autocite{tpil4}
+    \begin{itemize}
+      \item 학습 시간: 373시간 35분(2022년 1월\textasciitilde2023년 2월)
+      \item 연습 문제: 전부 풂
+    \end{itemize}
+    \item 매스리브4 포팅: 2023년 3월 시작
+    \begin{itemize}
+      \item \verb|Data.String.Defs|, \verb|Data.String.Basic| 포팅 마무리 중
+      \item 일부 정의와 보조 정리를 위의 두 파일에서 Std4로 옮겨야 됨
+      \item 그다음에 선형 대수학이나 추상 대수학에 관한 파일의 포팅을 시작할 계획임
+    \end{itemize}
+  \end{enumerate}
+\end{frame}
+
+\section{오픈 소스 생태계 참여 경험}
+
+\subsection{린 커뮤니티 참여 활동}
+
+\begin{frame}{린 커뮤니티 참여 활동}
+  \begin{itemize}
+    \item 2023년 1월부터 활동 중
+    \item 질문 답변, 버그 신고, 의견 교류
+    \item 현재 매스리브4 포터(porter)임
+  \end{itemize}
+\end{frame}
+
+\section{홍보 역량 및 계획}
+
+\begin{frame}{린과 매스리브의 홍보}
+  \begin{enumerate}
+    \item 홍보 역량
+      \begin{itemize}
+        \item 전기가오리 번역 모임 참여: 스탠퍼드 철학 백과사전 항목을 여럿이 번역함
+        \item 한국어 영상의 영어 자막을 직접 만들 수 있음
+      \end{itemize}
+    \item 홍보 계획
+      \begin{itemize}
+        \item 한국 린 이용자와의 인터뷰: 각자의 형식 수학 프로젝트 소개하기
+        \item 한국 인터넷 방송인과의 합동 방송: 린으로 간단한 문제 풀기
+      \end{itemize}
+  \end{enumerate}
+\end{frame}
+
+\section{맺음말}
+
+\subsection{한국에는 형식 수학이 없다}
+
+\begin{frame}{한국에는 형식 수학이 없다}
+  \begin{itemize}
+    \item 이론 컴퓨터 과학을 제외한 수학을 형식화하는 교수가 없음
+    \item 그나마 KAIST 수리과학과 엄상일 교수님이 린에 관심을 보임
+    \item 린 커뮤니티에서 활동하는 한국인은 현재 4명뿐인 듯함
+    \item 그중 2명만이 매스리브4 포팅에 참여함
+    \item 한국 정부와 대학의 지원이 절실함
+  \end{itemize}
+\end{frame}
+
+\section{참고 문헌}
+
+\begin{frame}{참고 문헌}
+  \printbibliography[heading=none]
+\end{frame}
+
+\end{document}
