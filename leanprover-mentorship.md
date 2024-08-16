@@ -13,7 +13,8 @@
 * 제가 멘티분들에게 린 정리 증명기의 이용법을 자세히 가르칠 계획입니다.
 * 저장소
   * 린 4: https://github.com/leanprover/lean4
-  * 린 4로 하는 정리 증명: https://github.com/leanprover/theorem_proving_in_lean4
+  * 린 4로 하는 정리 증명:
+    https://github.com/leanprover/theorem_proving_in_lean4
   * 린 4 웹 게임: https://github.com/leanprover-community/lean4game
 
 ## 프로젝트 소개
@@ -67,10 +68,13 @@
 * 알파푸르프(AlphaProof): 형식 수학 추리를 위한 강화 학습 기반 시스템
   * 린의 언어로 수학 진술을 증명하도록 자기 자신을 훈련함.
   * 사전 훈련된 언어 모형과 알파제로(AlphaZero) 강화 학습 알고리듬을 결합함.
-  * 제미니(Gemini) 모형을 미세하게 조정해 자연 언어로 쓰인 문제 진술을 형식 진술로 번역함. 이로써 다양한 난이도의 대규모 형식 문제 라이브러리를 만듦.
+  * 제미니(Gemini) 모형을 미세하게 조정해 자연 언어로 쓰인 문제 진술을 형식
+    진술로 번역함. 이로써 다양한 난이도의 대규모 형식 문제 라이브러리를 만듦.
 * 참고 자료
-  * 구글 딥마인드 블로그: https://deepmind.google/discover/blog/ai-solves-imo-problems-at-silver-medal-level/
-  * 린 줄립 챗 스레드: https://leanprover.zulipchat.com/#narrow/stream/219941-Machine-Learning-for-Theorem-Proving/topic/IMO.20results.20from.20Google.20DeepMind/near/453980266
+  * 구글 딥마인드 블로그:
+    https://deepmind.google/discover/blog/ai-solves-imo-problems-at-silver-medal-level/
+  * 린 줄립 챗 스레드:
+    https://leanprover.zulipchat.com/#narrow/stream/219941-Machine-Learning-for-Theorem-Proving/topic/IMO.20results.20from.20Google.20DeepMind/near/453980266
 
 ## 컨트리뷰션 운영 방안
 
@@ -86,13 +90,15 @@
 ### 첫째 주(9월 9~15일)
 
 * "린 4로 하는 정리 증명" 교재: 1~3장 읽기, 3장 연습 문제 풀기
-* 프로젝트 관리: 자신의 연습 문제 풀이를 모은 깃 저장소를 만들고 깃허브에서 공유하기
+* 프로젝트 관리: 자신의 연습 문제 풀이를 모은 깃 저장소를 만들고 깃허브에서
+  공유하기
 
 ### 둘째 주(9월 16~22일)
 
 * 추석 연휴: 16~18일
 * "린 4로 하는 정리 증명" 교재: 4장 읽고 연습 문제 풀기
-* 프로젝트 관리: 매깃(Magit) 등의 이용자 친화적인 깃 인터페이스로 커밋 이력 관리하기
+* 프로젝트 관리: 매깃(Magit) 등의 이용자 친화적인 깃 인터페이스로 커밋 이력
+  관리하기
 
 ### 셋째 주(9월 23~29일)
 
