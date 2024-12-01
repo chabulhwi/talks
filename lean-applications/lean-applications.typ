@@ -2,7 +2,7 @@
 #import themes.dewdrop: *
 #import "@preview/numbly:0.1.0": numbly
 
-#set text(font: "Noto Sans CJK KR")
+#set text(lang: "ko", font: "Noto Sans CJK KR")
 #set heading(numbering: numbly("{1}.", default: "1.1"))
 
 #show: dewdrop-theme.with(
