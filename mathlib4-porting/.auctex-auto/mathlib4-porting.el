@@ -1,8 +1,12 @@
+;; -*- lexical-binding: t; -*-
+
 (TeX-add-style-hook
  "mathlib4-porting"
  (lambda ()
+   (TeX-add-to-alist 'LaTeX-provided-class-options
+                     '(("beamer" "")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
-                     '(("inputenc" "utf8") ("biblatex-chicago" "authordate" "backend=biber")))
+                     '(("fontspec" "") ("inputenc" "utf8") ("kotex" "") ("bookmark" "") ("hyperref" "") ("listings" "") ("biblatex-chicago" "authordate" "backend=biber")))
    (add-to-list 'LaTeX-verbatim-environments-local "lstlisting")
    (add-to-list 'LaTeX-verbatim-environments-local "semiverbatim")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "lstinline")
