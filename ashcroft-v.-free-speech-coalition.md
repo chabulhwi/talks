@@ -224,4 +224,4 @@
 ## 참고 문헌
 
 * Ashcroft v. Free Speech Coalition, 535 U.S. 234 (2002).
-  https://supreme.justia.com/cases/federal/us/535/234/.
+  <https://supreme.justia.com/cases/federal/us/535/234/>.
