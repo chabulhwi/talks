@@ -220,3 +220,8 @@
 
 앞선 논의에 비추어 볼 때, 2256절 8조 B항과 2256절 8조 D항은 막연하므로 무효라는
 피상고인의 주장은 다룰 필요가 없다.
+
+## 참고 문헌
+
+* Ashcroft v. Free Speech Coalition, 535 U.S. 234 (2002).
+  https://supreme.justia.com/cases/federal/us/535/234/.
