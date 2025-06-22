@@ -101,7 +101,3 @@
 4. 그 밖의 도전
   - 형식화된 수학 증명을 자연어 증명으로 변환하는 프로그램을 만들자.
   - 수능 수학 문제의 풀이를 증명 보조기로 작성할 수 있는 인공 지능 모형을 만들자.
-
-// Local Variables:
-// tp--master-file: "/home/chabulhwi/semmalgil/talks/learn-formal-math/learn-formal-math.typ"
-// End:
