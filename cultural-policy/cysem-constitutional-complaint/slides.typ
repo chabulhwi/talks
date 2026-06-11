@@ -2,7 +2,7 @@
 #import themes.dewdrop: *
 #import "@preview/numbly:0.1.0": numbly
 
-#set text(lang: "ko", font: "Noto Sans CJK KR")
+#set text(lang: "ko", font: "Noto Sans KR")
 #set heading(numbering: numbly("{1}.", default: "1.1"))
 #show quote: set block(
   width: 100%,

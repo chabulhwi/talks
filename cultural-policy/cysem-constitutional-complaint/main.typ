@@ -19,7 +19,7 @@
 #set quote(block: true)
 #set text(
   lang: "ko",
-  font: "Noto Sans CJK KR",
+  font: "Noto Sans KR",
   size: 12pt,
 )
 #set page(
