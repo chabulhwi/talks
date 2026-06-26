@@ -1,4 +1,5 @@
 **/.auctex-auto
+*~
 
 *.aux
 *.bbl
@@ -12,5 +13,3 @@
 *.synctex.gz
 *.toc
 *.vrb
-
-*~
