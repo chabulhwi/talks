@@ -17,7 +17,7 @@ free to reuse the content under the terms of [CC BY-SA 4.0](./LICENSE).
 
 * [`learn-formal-math`](./learn-formal-math): Learning formalized mathematics.
 
-### Cultural policy
+### The arts
 
 * [`cultural-policy`](./the-arts/cultural-policy): South Korea's regulations on
   producing, distributing, and viewing creative work and pornography.
