@@ -19,8 +19,8 @@ free to reuse the content under the terms of [CC BY-SA 4.0](./LICENSE).
 
 ### Cultural policy
 
-* [`cultural-policy`](./cultural-policy): South Korea's regulations on
+* [`cultural-policy`](./the-arts/cultural-policy): South Korea's regulations on
   producing, distributing, and viewing creative work and pornography.
-  - [`cysem-constitutional-complaint`](./cultural-policy/cysem-constitutional-complaint):
+  - [`cysem-constitutional-complaint`](./the-arts/cultural-policy/cysem-constitutional-complaint):
     Constitutional Complaint Against the Act on the Protection of Children and
     Youth Against Sex Offenses.
