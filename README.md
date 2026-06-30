@@ -24,3 +24,6 @@ free to reuse the content under the terms of [CC BY-SA 4.0](./LICENSE).
   - [`cysem-constitutional-complaint`](./the-arts/cultural-policy/cysem-constitutional-complaint):
     Constitutional Complaint Against the Act on the Protection of Children and
     Youth Against Sex Offenses.
+  - [`proposed-amendment-to-act`](./the-arts/cultural-policy/proposed-amendment-to-act):
+    My draft of an amendment to the Act on the Protection of Children and Youth
+    Against Sex Offenses.
