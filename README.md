@@ -27,3 +27,6 @@ free to reuse the content under the terms of [CC BY-SA 4.0](./LICENSE).
   - [`proposed-amendment-to-act`](./the-arts/cultural-policy/proposed-amendment-to-act):
     My draft of an amendment to the Act on the Protection of Children and Youth
     Against Sex Offenses.
+* [`video-games`](./the-arts/video-games): Video games.
+  - [`sanabi`](./the-arts/video-games/sanabi): SANABI (산나비) is an
+    exhilarating stylish dystopian action-platformer.
