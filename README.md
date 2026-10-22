@@ -5,17 +5,17 @@ free to reuse the content under the terms of [CC BY-SA 4.0](./LICENSE).
 
 ### Proof assistants
 
-* [`proof-assistant`](./proof-assistant): Proof assistants.
-  - [`lean-prover`](./proof-assistant/lean-prover): The Lean functional
+* [`proof-assistants`](./proof-assistants): Proof assistants.
+  - [`lean-prover`](./proof-assistants/lean-prover): The Lean functional
     programming language and proof assistant.
-    + [`lean-applications`](./proof-assistant/lean-prover/lean-applications):
+    + [`lean-applications`](./proof-assistants/lean-prover/lean-applications):
       Applications of Lean.
-    + [`mathlib4-porting`](./proof-assistant/lean-prover/mathlib4-porting):
+    + [`mathlib4-porting`](./proof-assistants/lean-prover/mathlib4-porting):
       Porting Mathlib from Lean 3 to Lean 4.
 
 ### Formal mathematics
 
-* [`learn-formal-math`](./learn-formal-math): Learning formalized mathematics.
+* [`formal-math`](./formal-math): Formalized mathematics.
 
 ### The arts
 
